@@ -5,25 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog | Code & Coffee</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #F3F4FF;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fceabb, #f8b500, #6c63ff);
       color: #333;
     }
 
     header {
-      background: #6C63FF;
-      color: white;
-      padding: 25px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
       text-align: center;
+      padding: 30px;
+      color: white;
     }
 
     nav {
-      background: #2D2A7A;
-      padding: 12px;
+      background: rgba(0, 0, 0, 0.5);
       text-align: center;
+      padding: 12px;
     }
 
     nav a {
@@ -40,7 +43,7 @@
     .container {
       width: 90%;
       max-width: 1000px;
-      margin: 25px auto;
+      margin: 30px auto;
       display: flex;
       gap: 20px;
     }
@@ -51,21 +54,33 @@
 
     aside {
       flex: 1;
-      background: white;
+      background: rgba(255,255,255,0.9);
       padding: 15px;
-      border-radius: 12px;
+      border-radius: 15px;
       height: fit-content;
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-      border-top: 5px solid #FF6584;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+      border-top: 6px solid #FF6584;
     }
 
     .post {
-      background: white;
+      background: rgba(255,255,255,0.9);
       padding: 20px;
       margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
       border-left: 6px solid #6C63FF;
+      transition: 0.3s;
+    }
+
+    .post:hover {
+      transform: scale(1.03);
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    }
+
+    .post img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
     }
 
     .post h2 {
@@ -77,18 +92,15 @@
       color: gray;
     }
 
-    .post p {
-      line-height: 1.6;
-    }
-
     button {
       background: #FF6584;
       color: white;
       border: none;
       padding: 10px 14px;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
       font-weight: bold;
+      margin-top: 10px;
     }
 
     button:hover {
@@ -97,7 +109,7 @@
 
     footer {
       text-align: center;
-      background: #2D2A7A;
+      background: rgba(0,0,0,0.6);
       color: white;
       padding: 15px;
       margin-top: 30px;
@@ -108,8 +120,8 @@
 <body>
 
   <header>
-    <h1>Code & Coffee </h1>
-    <p>Read my latest blog posts</p>
+    <h1>📚 Blog Zone</h1>
+    <p>Welcome to my thoughts & chaos ✨</p>
   </header>
 
   <nav>
@@ -122,40 +134,44 @@
   <div class="container">
 
     <main>
+
+      <div style="background:rgba(255,255,255,0.9); padding:15px; border-radius:15px; margin-bottom:20px; border-left:6px solid #FF6584;">
+        <h3>✨ Quote of the Day</h3>
+        <p>"Do it for the plot."</p>
+      </div>
+
       <div class="post">
+        <img src="https://picsum.photos/900/400?random=1" alt="Blog Image">
         <h2>My First Blog Post</h2>
         <small>Posted on: 17 Feb 2026</small>
-        <p>
-          Welcome to my blog! This is my first post. I created this blog website using HTML and CSS.
-          Blogging is a great way to share ideas and knowledge.
-        </p>
+        <p>Welcome to my blog! This is my first post. I created this blog website using HTML and CSS.</p>
         <button>Read More</button>
       </div>
 
       <div class="post">
+        <img src="https://picsum.photos/900/400?random=2" alt="Technology Image">
         <h2>Why I Like Technology</h2>
-        <small>Posted on: 17 Feb 2026</small>
-        <p>
-          Technology is improving our lives every day. From smartphones to artificial intelligence,
-          technology is shaping the future and helping people solve real problems.
-        </p>
+        <small>Posted on: 15 Feb 2026</small>
+        <p>Technology is improving our lives every day. From smartphones to AI, it’s shaping the future.</p>
         <button>Read More</button>
       </div>
 
       <div class="post">
-        <h2>Student Life and Productivity</h2>
-        <small>Posted on: 17 Feb 2026</small>
-        <p>
-          Being a student requires good time management. Planning your day, studying consistently,
-          and taking breaks are the best ways to stay productive and stress-free.
-        </p>
+        <img src="https://picsum.photos/900/400?random=3" alt="Student Life Image">
+        <h2>Student Life & Productivity</h2>
+        <small>Posted on: 10 Feb 2026</small>
+        <p>Being a student requires time management. Studying consistently and taking breaks helps a lot.</p>
         <button>Read More</button>
       </div>
+
     </main>
 
     <aside>
       <h3 style="color:#2D2A7A;">About Me</h3>
-      <p>Hello! I am a student learning web development. This is my blog project.</p>
+      <p>Hello! I am Parth, a student learning web development 🚀</p>
+
+      <h3 style="color:#2D2A7A;">Mood of the Day 😎</h3>
+      <p>Feeling productive and creative ✨</p>
 
       <h3 style="color:#2D2A7A;">Categories</h3>
       <ul>
@@ -168,7 +184,7 @@
   </div>
 
   <footer>
-    <p>© 2026 My Blog Website | All Rights Reserved</p>
+    <p>© 2026 Code & Coffee | Blogs that hit different ☕</p>
   </footer>
 
 </body>
